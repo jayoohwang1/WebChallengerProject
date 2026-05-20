@@ -4,27 +4,24 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta name="description" content="WebChallenger is a web agent framework with selective observation, persistent site memory, and compound action workflows, achieving open-model state-of-the-art on four web navigation benchmarks without fine-tuning.">
+  <meta property="og:title" content="WebChallenger: A Reliable and Efficient Generalist Web Agent"/>
+  <meta property="og:description" content="A web agent framework with selective observation, persistent site memory, and compound action workflows, achieving open-model state-of-the-art on four web navigation benchmarks without fine-tuning."/>
+  <meta property="og:url" content="https://jayoohwang1.github.io/webchallenger-site/"/>
+  <meta property="og:image" content="https://jayoohwang1.github.io/webchallenger-site/static/images/webchallenger_logo.png"/>
+  <meta property="og:image:width" content="775"/>
+  <meta property="og:image:height" content="778"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:title" content="WebChallenger: A Reliable and Efficient Generalist Web Agent">
+  <meta name="twitter:description" content="A web agent framework with selective observation, persistent site memory, and compound action workflows, achieving open-model state-of-the-art on four web navigation benchmarks without fine-tuning.">
+  <meta name="twitter:image" content="https://jayoohwang1.github.io/webchallenger-site/static/images/webchallenger_logo.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="WebChallenger, PageMem, web agents, LLM agents, web navigation, WebArena, VisualWebArena, WorkArena, Online-Mind2Web, open-weight models, GLM-4">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>WebChallenger: A Reliable and Efficient Generalist Web Agent</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -60,6 +57,10 @@
                 <span class="author-block">Xiaowen Zhang,</span>
                   <span class="author-block">Vedant Padwal</span>
                   </div>
+
+                  <figure class="image" style="max-width: 270px; margin: 1rem auto 1rem;">
+                    <img src="static/images/webchallenger_logo_small.png" alt="WebChallenger logo"/>
+                  </figure>
 
 <!--                   <div class="is-size-5 publication-authors">
                     <span class="author-block">Institution Name<br>Conferance name and year</span>
@@ -100,6 +101,28 @@
                   </a>
                 </span>
 
+                <!-- Blog link -->
+                <span class="link-block">
+                  <a href="#" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-blog"></i>
+                  </span>
+                  <span>Blog (coming soon)</span>
+                </a>
+              </span>
+
+              <!-- Twitter link -->
+              <span class="link-block">
+                <a href="#" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-twitter"></i>
+                </span>
+                <span>Twitter (coming soon)</span>
+              </a>
+            </span>
+
                 <!-- ArXiv abstract Link -->
 <!--                 <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
@@ -110,6 +133,15 @@
                   <span>arXiv</span>
                 </a>
               </span> -->
+            </div>
+
+            <div class="publication-tldr has-text-left" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #dbdbdb;">
+              <p class="is-size-5">
+                WebChallenger is a web agent framework built around <strong>PageMem</strong>, a structured page representation that supports selective observation, persistent site memory, and compound action workflows.
+              </p>
+              <p class="is-size-5" style="margin-top: 1rem;">
+                Without fine-tuning, WebChallenger sets new open-model state-of-the-art on four web navigation benchmarks, showing scaffolding alone can drastically improve web agent performance.
+              </p>
             </div>
           </div>
         </div>
@@ -133,25 +165,413 @@
 <!--       </h2> -->
 <!--     </div> -->
 <!--   </div> -->
-<!-- </section> --> -->
+<!-- </section> -->
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<!-- <section class="section hero is-light">
+<!-- Commented out: replaced by hero TL;DR + Method cards. Restore if a full abstract is wanted again.
+<section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Autonomous web navigation remains challenging for LLM agents, and the strongest generalist systems rely on proprietary reasoning models whose inference cost is prohibitive for the repetitive tasks where such agents would be most useful. We argue this gap stems not from insufficient model capability but from agent architectures that fail to replicate three human cognitive advantages: selective attention to relevant page regions, persistent memory of website structure, and procedural fluency with common interaction patterns.
+          </p>
+          <p>
+            We introduce WebChallenger, a web agent framework that addresses each gap through architecture design rather than model scale, built around PageMem: a structured page representation deterministically constructed from the DOM that exposes each page as a hierarchy of semantic sections with short summaries. On this shared substrate we build three mechanisms that mirror the three cognitive advantages: a divide-and-conquer observation pipeline that lets the agent skim section summaries and extract details only from task-relevant regions; a lightweight exploration and memory system that traverses each website once to build a reusable map of pages and element behaviors; and compound action workflows that collapse common multi-step interactions into single agent actions, handling partial state changes automatically. Because all three operate over PageMem, the framework generalizes across websites without site-specific adapters.
+          </p>
+          <p>
+            Using off-the-shelf open-weight models without fine-tuning, our system achieves 56.3% on WebArena, 48.7% on VisualWebArena, 51.0% on Online-Mind2Web, and 70.9% on WorkArena, approaching frontier proprietary systems at a fraction of the cost.
           </p>
         </div>
       </div>
     </div>
   </div>
-</section> -->
+</section>
+-->
 <!-- End paper abstract -->
+
+
+<!-- Overview figure -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <figure class="image">
+          <img src="static/images/figure_overview.png" alt="Overview of WebChallenger: webpage decomposition into PageSections, intermediate PageMem interface with section summaries, and selective focus with high-level workflows."/>
+        </figure>
+        <p class="has-text-centered is-size-6" style="margin-top: 1rem;">
+          <strong>Overview of WebChallenger.</strong> <em>(left)</em> Each webpage is decomposed along the DOM into sections corresponding to semantic regions. <em>(middle)</em> Sections are indexed by short summaries to form a PageMem, cached in per-website memory. The agent skims summaries and expands only task-relevant sections. <em>(right)</em> Specialized multi-step workflows are executed based on section type.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End overview figure -->
+
+
+<!-- Method -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            Humans possess three major advantages over LLM agents when it comes to web navigation: selective attention to relevant page regions, persistent memory of website structure, and procedural fluency with common interaction patterns. WebChallenger replicates each through a dedicated architectural mechanism, all built on <strong>PageMem</strong>: a structured page representation deterministically constructed from the DOM that exposes each page as a hierarchy of semantic sections with short summaries. Because every component operates over this shared substrate, the framework generalizes across websites with no site-specific adapters.
+          </p>
+        </div>
+
+        <div class="columns is-multiline is-centered" style="margin-top: 1.5rem;">
+          <div class="column is-one-third">
+            <div class="box" style="height: 100%;">
+              <h3 class="title is-5">Offline Exploration & Memory</h3>
+              <p class="is-size-6">
+                A one-time deterministic traversal of each website builds a persistent map of pages and element behaviors that is reused across every subsequent task.
+              </p>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="box" style="height: 100%;">
+              <h3 class="title is-5">Divide-and-Conquer Observation</h3>
+              <p class="is-size-6">
+                Instead of feeding a whole page to one prompt, the agent skims section summaries, expands only the task-relevant regions, then synthesizes a compact observation.
+              </p>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="box" style="height: 100%;">
+              <h3 class="title is-5">Compound Action Workflows</h3>
+              <p class="is-size-6">
+                Multi-step interactions like form submission, dropdowns, and search collapse into single agent actions, keeping decisions anchored at meaningful page transitions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End method -->
+
+
+<!-- Results -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Results</h2>
+
+        <style>
+          .results-table td, .results-table th {
+            padding: 0.4rem 0.7rem;
+            vertical-align: middle;
+            line-height: 1.4;
+          }
+          .results-table thead th {
+            border-bottom: 2px solid #4a4a4a;
+          }
+          .results-table tr.group-major td {
+            border-top: 2px solid #4a4a4a;
+          }
+        </style>
+
+        <p class="is-size-6 has-text-justified" style="margin-bottom: 1rem;">
+          <strong>Benchmark success rates (%).</strong> WebChallenger sets new open-model SOTA on four web navigation benchmarks and performs comparably to agents built on proprietary models, despite using no training. Best proprietary and open-model results are bolded.
+          WebArena <a href="https://arxiv.org/abs/2307.13854" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a>,
+          VWA: VisualWebArena <a href="https://arxiv.org/abs/2401.13649" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a>,
+          O-M2W: Online-Mind2Web <a href="https://arxiv.org/abs/2504.01382" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a>,
+          WoA: WorkArena <a href="https://arxiv.org/abs/2403.07718" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a>.
+        </p>
+
+        <div class="table-container" style="border: 1px solid #b5b5b5; border-radius: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.08);">
+          <table class="table is-fullwidth is-striped is-hoverable is-narrow results-table" style="font-size: 0.92rem; margin-bottom: 0;">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Method</th>
+                <th>Model(s)</th>
+                <th class="has-text-centered">WebArena</th>
+                <th class="has-text-centered">VWA</th>
+                <th class="has-text-centered">O-M2W</th>
+                <th class="has-text-centered">WoA L1</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="13" style="vertical-align: middle;"><em>Proprietary<br>Models</em></td>
+                <td>GenericAgent <a href="https://huggingface.co/spaces/ServiceNow/browsergym-leaderboard" target="_blank" class="is-size-7" title="BrowserGym Leaderboard"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>GPT-4o</td>
+                <td class="has-text-centered">31.4</td>
+                <td class="has-text-centered">26.7</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">45.5</td>
+              </tr>
+              <tr>
+                <td>GenericAgent</td>
+                <td>Claude 3.5 Sonnet</td>
+                <td class="has-text-centered">36.2</td>
+                <td class="has-text-centered">21.0</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">56.4</td>
+              </tr>
+              <tr>
+                <td>GenericAgent</td>
+                <td>GPT-5</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered"><strong>79.1</strong></td>
+              </tr>
+              <tr>
+                <td>GenericAgent</td>
+                <td>GPT-4o-mini</td>
+                <td class="has-text-centered">17.4</td>
+                <td class="has-text-centered">16.9</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">27.0</td>
+              </tr>
+              <tr>
+                <td>WALT <a href="https://arxiv.org/abs/2510.01524" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>GPT-5</td>
+                <td class="has-text-centered">50.1</td>
+                <td class="has-text-centered"><strong>52.9</strong></td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr>
+                <td>IBM CUGA <a href="https://arxiv.org/abs/2503.01861" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>&ndash;</td>
+                <td class="has-text-centered"><strong>61.7</strong></td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr>
+                <td>OpenAI CUA <a href="https://openai.com/index/introducing-operator/" target="_blank" class="is-size-7" title="OpenAI: Introducing Operator"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>&ndash;</td>
+                <td class="has-text-centered">58.1</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered"><strong>61.3</strong></td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr>
+                <td>ScribeAgent <a href="https://arxiv.org/abs/2411.15004" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>GPT-4o + Qwen2.5-32B</td>
+                <td class="has-text-centered">53.0</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr>
+                <td>AgentSymbiotic <a href="https://arxiv.org/abs/2502.07942" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>Claude 3.5 + Llama3 8B</td>
+                <td class="has-text-centered">48.5</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr>
+                <td>AgentOccam-Judge <a href="https://arxiv.org/abs/2410.13825" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>GPT-4</td>
+                <td class="has-text-centered">45.7</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr>
+                <td>WebPilot <a href="https://arxiv.org/abs/2408.15978" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>GPT-4o</td>
+                <td class="has-text-centered">37.2</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr>
+                <td>Agent Workflow Memory <a href="https://arxiv.org/abs/2409.07429" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>GPT-4o</td>
+                <td class="has-text-centered">35.5</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr>
+                <td>SkillWeaver <a href="https://arxiv.org/abs/2504.07079" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>GPT-4o</td>
+                <td class="has-text-centered">29.8</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+
+              <tr class="group-major">
+                <td rowspan="9" style="vertical-align: middle;"><em>Open-Source<br>Models<br>(fine-tuned)</em></td>
+                <td>Agent-as-Annotators <a href="https://arxiv.org/abs/2604.07776" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>Qwen3.5-9B</td>
+                <td class="has-text-centered">41.5</td>
+                <td class="has-text-centered">33.9</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">51.5</td>
+              </tr>
+              <tr>
+                <td>Mobile-Agent-v3.5 <a href="https://arxiv.org/abs/2602.16855" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>Qwen3-VL-32B</td>
+                <td class="has-text-centered">48.4</td>
+                <td class="has-text-centered">46.6</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr>
+                <td>WebDreamer <a href="https://arxiv.org/abs/2411.06559" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>Qwen2-VL-7B</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">21.9</td>
+                <td class="has-text-centered">35.0</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr>
+                <td>Fara-7B <a href="https://arxiv.org/abs/2511.19663" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>Qwen2.5-VL-7B</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">34.1</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr>
+                <td>Learn-by-Interact <a href="https://arxiv.org/abs/2501.10893" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>Codestral 22B</td>
+                <td class="has-text-centered">24.2</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr>
+                <td>AgentTrek <a href="https://arxiv.org/abs/2412.09605" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>Qwen2.5-32B</td>
+                <td class="has-text-centered">22.4</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr>
+                <td>Go-Browse <a href="https://arxiv.org/abs/2506.03533" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>Qwen2.5-7B</td>
+                <td class="has-text-centered">21.7</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr>
+                <td>AutoWebGLM <a href="https://arxiv.org/abs/2404.03648" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>ChatGLM3 6B</td>
+                <td class="has-text-centered">18.2</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr>
+                <td>TTI <a href="https://arxiv.org/abs/2506.07976" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>Gemma 3 12B</td>
+                <td class="has-text-centered">26.1</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+
+              <tr>
+                <td rowspan="3" style="vertical-align: middle;"><em>Open-Source<br>Models<br>(zero-shot)</em></td>
+                <td>GenericAgent</td>
+                <td>GPT-oss-120b</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">50.9</td>
+              </tr>
+              <tr>
+                <td>Tree Search <a href="https://arxiv.org/abs/2407.01476" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a></td>
+                <td>Llama-3-70B-Instruct</td>
+                <td class="has-text-centered">10.1</td>
+                <td class="has-text-centered">16.7</td>
+                <td class="has-text-centered">&ndash;</td>
+                <td class="has-text-centered">&ndash;</td>
+              </tr>
+              <tr style="background-color: #f0f8ff;">
+                <td><em><strong>WebChallenger (Ours)</strong></em></td>
+                <td>GLM-4-32B + Qwen2.5-VL-7B</td>
+                <td class="has-text-centered"><strong>56.3</strong></td>
+                <td class="has-text-centered"><strong>48.7</strong><sup>&dagger;</sup></td>
+                <td class="has-text-centered"><strong>51.0</strong></td>
+                <td class="has-text-centered"><strong>70.9</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="is-size-7" style="margin-top: 0.5rem;">
+          <sup>&dagger;</sup> Our VisualWebArena experiments use Qwen3-VL-4B-Instruct in place of Qwen2.5-VL-7B-Instruct.
+        </p>
+
+        <div class="content has-text-justified" style="margin-top: 2rem;">
+          <p>
+            We evaluate WebChallenger on four web navigation benchmarks chosen to span a diverse range of capabilities: <strong>WebArena</strong> (812 tasks across 6 simulated websites), <strong>VisualWebArena</strong> (910 tasks requiring visual reasoning), <strong>Online-Mind2Web</strong> (300 tasks on 136 real-world sites), and <strong>WorkArena</strong> (330 enterprise UI tasks). WebChallenger sets new open-model state-of-the-art on all four, outperforming fine-tuned baselines despite using no training of its own and approaching the performance of frontier proprietary systems at a fraction of their cost. Consistent gains across simulated and live websites, text-only and visually grounded tasks, and consumer and enterprise interfaces indicate that the framework's advantages come from structural patterns shared across the web rather than site-specific adaptation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End results -->
+
+
+<!-- Analysis -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <h2 class="title is-3 has-text-centered">Analysis</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            We run additional experiments on the 165-task WebArena-lite <a href="https://arxiv.org/abs/2408.06327" target="_blank" class="is-size-7" title="arXiv"><i class="fas fa-external-link-alt"></i></a> subset to attribute credit across the three architectural components, measure their inference cost, and test sensitivity to the backbone model.
+          </p>
+        </div>
+
+        <h3 class="title is-5" style="margin-top: 2rem;">Component ablations</h3>
+        <div class="content has-text-justified">
+          <p>
+            Removing each pillar in turn shows that all three contribute meaningfully and non-redundantly. The observation pipeline carries the most weight (&minus;17.6 points), followed by compound action workflows (&minus;9.7) and persistent memory (&minus;7.6).
+          </p>
+        </div>
+        <figure class="image" style="margin: 1rem auto; max-width: 800px;">
+          <img src="static/images/table_ablation_perf.png" alt="Component ablation table showing per-site WebArena-lite success rates for the full system and three single-component-removed variants."/>
+        </figure>
+
+        <h3 class="title is-5" style="margin-top: 2.5rem;">Token and step efficiency</h3>
+        <div class="content has-text-justified">
+          <p>
+            The divide-and-conquer observation pipeline decomposes large prompts into multiple smaller prompts, removing it reduces total token usage but increases average prompt size by 4.75&times; (1850 &rarr; 8793 tokens). Compound action workflows collapse multi-step interactions into single decisions; removing them grows total token usage by nearly 40% (47M &rarr; 65M).
+          </p>
+        </div>
+        <figure class="image" style="margin: 1rem auto; max-width: 700px;">
+          <img src="static/images/table_ablation_eff.png" alt="Token and step usage table for the GLM-4-32B component ablations."/>
+        </figure>
+
+        <h3 class="title is-5" style="margin-top: 2.5rem;">Backbone comparison</h3>
+        <div class="content has-text-justified">
+          <p>
+            Finally, we vary the backbone to separate the contribution of the harness from that of the model. The same GLM-4-32B that reaches 58.8% in our framework scores just 19.4% in a vanilla single-prompt harness, a 39.4-point gap attributable purely to system architecture. Performance scales with backbone strength as expected (GPT-5: 68.7%, GPT-4o-mini: 46.7%), but the framework retains strong performance even with weaker models.
+          </p>
+        </div>
+        <figure class="image" style="margin: 1rem auto; max-width: 750px;">
+          <img src="static/images/table_backbone.png" alt="Backbone model comparison table on WebArena-lite, including GenericAgent baseline with the same GLM-4-32B backbone."/>
+        </figure>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End analysis -->
 
 
 <!-- Image carousel -->
@@ -190,7 +610,7 @@
 <!--   </div> -->
 <!-- </div> -->
 <!-- </div> -->
-<!-- </section> --> -->
+<!-- </section> -->
 <!-- End image carousel -->
 
 
@@ -213,7 +633,7 @@
 <!--       </div> -->
 <!--     </div> -->
 <!--   </div> -->
-<!-- </section> --> -->
+<!-- </section> -->
 <!-- End youtube video -->
 
 
@@ -247,7 +667,7 @@
 <!--       </div> -->
 <!--     </div> -->
 <!--   </div> -->
-<!-- </section> --> -->
+<!-- </section> -->
 <!-- End video carousel -->
 
 
@@ -288,7 +708,7 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
